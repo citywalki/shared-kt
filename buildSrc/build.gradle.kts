@@ -3,9 +3,10 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(libs.versions.java.compile.toolchain.get().toInt())
 }
 
 dependencies {
     implementation(libs.kotlin.gradle.plugin)
+    implementation(libs.detektGradlePlugin)
 }

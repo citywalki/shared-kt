@@ -1,5 +1,5 @@
 allprojects {
-    group = "com.github.walkin.shared"
+    group = "pro.walkin.shared"
 }
 
 //allprojects {

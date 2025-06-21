@@ -1,27 +1,3 @@
-//rootProject.name = "shared"
-//
-//pluginManagement {
-//    includeBuild("../build-logic")
-//}
-//
-//dependencyResolutionManagement {
-//    versionCatalogs {
-//        create("libs") {
-//            from(files("../gradle/libs.versions.toml"))
-//        }
-//    }
-//}
-//
-//include("api")
-//include("security-spring")
-//include("autoconfigure")
-//
-//dependencyResolutionManagement {
-//    repositories {
-//        maven("https://repo.huaweicloud.com/repository/maven/")
-//        mavenCentral()
-//    }
-//}
 dependencyResolutionManagement {
     // Use Maven Central as the default repository (where Gradle will download dependencies) in all subprojects.
     @Suppress("UnstableApiUsage")
@@ -38,5 +14,6 @@ plugins {
 
 include("api")
 include(":autoconfigure")
+include("shared-utils")
 
 rootProject.name = "shared"
