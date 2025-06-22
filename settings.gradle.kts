@@ -13,7 +13,6 @@ plugins {
 }
 
 include("api")
-include(":autoconfigure")
 include("shared-utils")
 
 rootProject.name = "shared"
